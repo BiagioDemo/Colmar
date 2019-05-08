@@ -1,34 +1,143 @@
 /* UNIVERSAL */
-
 html, body {
   font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  /* background-color: #d8d8d8; */
+  background-color: lightblue;
+  color: #4d4d4d;
+}
+
+.gray {
+  color: #4d4d4d;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* NAV */
+
+header {
+  width: 100%;
+  height: 64px;
+  background-color: whitesmoke;
+  opacity: .5;
+
+  position: fixed;
+  z-index: 10;
+
+}
+
+.navContainer {
+  width: 1024px;
+  height: 64px;
+  margin: 0 auto;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 24px;
+}
+
+.logoGroup img {
+  height: 32px;
+}
+
+.colmar{
+  color: #4a4a4a;
+}
+
+.academy {
+  color: #999999;
+}
+
+nav {
+  display: inline-block;
+  Total is 24px (16px padding from span and 8px from margin)
+  margin-right: 8px;
+}
+
+nav span {
+  text-transform: uppercase;
+  padding-right: 16px;
+  transition: color .8s;
+}
+
+nav span:hover {
+  color: black;
+}
+
+
+/* HERO */
+
+.heroContainer {
+
+  background-color: #d8d8d8;
+  width: 1024px;
+  margin: 0 auto;
+
+  /* position:absolute; */
+  /* margin-top: 64px; */
+
+
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  padding-top: 64px;
+
+
+
+  display: flex;
+  align-items: center;
+
+}
+
+.heroContainer img {
+  width: 60%;
+  margin: 32px 24px 32px 24px;
+}
+
+.CTAContainer {
+  padding-right: 60px;
+}
+
+.CTAContainer h1 {
+  font-size: 2.15rem;
+    /* color: #383838; */
+  font-weight: bold;
+}
+
+.CTAContainer h4 {
+  font-size: 2.15rem;
+    /* color: #383838; */
+  font-weight: bold;
 }
 
 
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {}
 
-
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait)  {
-
-
-}
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {}
 
 @media only screen and (min-resolution: 150dpi) {
-    /* CSS for high resolution screens */
+  /* CSS for high resolution screens */
   /* .logo{
   background-image: url("../img/spaceship@2x.png");
   } */
 }
 
-@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {}
 
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)  {
-
-}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}

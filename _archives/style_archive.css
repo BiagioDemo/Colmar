@@ -1,35 +1,44 @@
 /* UNIVERSAL */
 html, body {
   font-size: 16px;
-  /* font-family: 'Exo', sans-serif; */
-  font-family: 'Ovo', sans-serif;
-
+  font-family: 'Exo', sans-serif;
   background-color: #d8d8d8;
   /* background-color: lightblue; */
   color: #4d4d4d;
 }
 
-.container {
-  width: 1024px;
-  margin: 0 auto;
-  display: flex;
+.gray {
+  color: #4d4d4d;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* NAV */
+
 header {
   width: 100%;
   height: 64px;
-  background-color: white;
-  /* opacity: .5; */
+  background-color: whitesmoke;
+  opacity: .5;
 
   position: fixed;
   z-index: 10;
+
 }
 
-.nav.container {
+.navContainer {
+  width: 1024px;
   height: 64px;
+  margin: 0 auto;
   background-color: white;
 
+  display: flex;
   align-items: center;
 }
 
@@ -38,10 +47,6 @@ header {
   align-items: center;
   flex-grow: 1;
   margin-left: 24px;
-}
-
-.logoGroup:hover {
-  cursor:pointer;
 }
 
 .logoGroup img {
@@ -63,14 +68,14 @@ header {
 
 nav {
   display: inline-block;
-  /* Total is 24px (16px padding from span and 8px from margin) */
+  Total is 24px (16px padding from span and 8px from margin)
   margin-right: 8px;
 }
 
 nav span {
   text-transform: uppercase;
   padding-right: 16px;
-  transition: color .4s;
+  transition: color .8s;
 }
 
 nav span:hover {
@@ -79,26 +84,31 @@ nav span:hover {
 }
 
 
-/* MAIN CONTAINER */
-
-.mainContainer {
-  position: relative;
-  top: 64px;
-  /* background-color: red; */
-}
-
-
 /* HERO */
 
-.hero.container {
+.heroContainer {
 
   background-color: #d8d8d8;
+  width: 1024px;
+  margin: 0 auto;
 
+  /* position:absolute; */
+  /* margin-top: 64px; */
+
+
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  padding-top: 64px;
+
+
+
+  display: flex;
   align-items: center;
 
 }
 
-.hero img {
+.heroContainer img {
   width: 60%;
   margin: 32px 24px 32px 24px;
 }
@@ -109,9 +119,9 @@ nav span:hover {
 }
 
 .CTAContainer h1 {
-  font-size: 2.15rem;
+  font-size: 3.15rem;
+    /* color: #383838; */
   font-family: 'Vollkorn', sans-serif;
-  /* font-family: 'Muli', sans-serif; */
   font-weight: bolder;
   /* background-color: orange; */
   padding-bottom: 1rem;
@@ -124,20 +134,28 @@ nav span:hover {
 }
 
 .CTAContainer h4 {
-  font-size: 1.0rem;
-  width: 50%;
-  font-weight: bold;
+  font-size: 1.25rem;
+    /* color: #383838; */
+  /* font-weight: bold; */
   color: white;
   background-color: #4d4d4d;
   text-align:center;
-  text-transform: uppercase;
+text-transform: uppercase;
+
+  /* padding-top: 8px;
+  padding-bottom: 8px; */
 
   padding: 8px 0 8px;
 }
 
 /* SECTION 1: Practice */
-.practice.container {
+.practiceContainer {
   background-color: white;
+  width: 1024px;
+
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
 }
 
 .leftSide {
@@ -163,7 +181,7 @@ nav span:hover {
 .leftSide p {
   /* background-color: lightgray; */
   /* background-color: hsl(10, 50%, 90%); */
-  width: 80%;
+  /* font-family: 'Vollkorn', sans-serif; */
   font-size: .8rem;
   padding-bottom: 32px;
 }
@@ -171,6 +189,7 @@ nav span:hover {
 .leftSide span {
   /* background-color: lightgray; */
   /* background-color: hsl(90, 50%, 90%); */
+  /* font-family: 'Vollkorn', sans-serif; */
   font-size: .667rem;
   padding-bottom: 32px;
 }
@@ -178,14 +197,9 @@ nav span:hover {
 .rightSide {
   width: 40%;
   padding-top: 16px;
-  margin-right: 5px;
 }
 
-/* .box:last-child {
-  background-color: hsl(0, 0%, 95%);
-} */
-
-.box.highlight {
+.box:last-child {
   /* background-color: #d8d8d8; */
   background-color: hsl(0, 0%, 95%);
 }
@@ -225,7 +239,7 @@ nav span:hover {
 
 /* COURSES */
 
-.courses.cointainer {
+.coursesCointainer {
   /* background-color: hsl(60, 50%, 90%); */
   background-color: #d8d8d8;
   width: 1024px;
@@ -234,7 +248,7 @@ nav span:hover {
   /* align-items: center; */
 }
 
-.courses h2 {
+.coursesCointainer h2 {
   /* background-color: hsl(60, 50%, 90%); */
   font-family: 'Vollkorn', sans-serif;
   font-weight: bolder;
@@ -244,7 +258,7 @@ nav span:hover {
   text-align: center;
 }
 
-.courses .gallery {
+.coursesCointainer .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -291,7 +305,7 @@ nav span:hover {
 /* THESIS */
 
 
-.thesis.container {
+.thesisContainer {
   background-color: white;
   width: 1024px;
 
@@ -348,10 +362,9 @@ nav span:hover {
 /* FOOTER */
 
 footer {
-  margin-top: 36px;
   width 100%
   border-top: 10px solid black;
-  background-color: black;
+  background-color: white;
 }
 
 .footerContainer {
@@ -364,7 +377,6 @@ footer {
 
 .copyright {
   flex-grow: 1;
-  color: gray;
 }
 
 .terms span  {
@@ -373,7 +385,7 @@ footer {
 }
 
 .terms span a {
-  color: gray;
+  color: black;
   text-decoration: none;
 }
 

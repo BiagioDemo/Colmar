@@ -109,6 +109,7 @@ nav span:hover {
 
 .CTAContainer {
   padding-right: 60px;
+  width:40%;
 }
 
 .CTAContainer h1 {
@@ -118,12 +119,56 @@ nav span:hover {
 }
 
 .CTAContainer h4 {
-  font-size: 2.15rem;
+  font-size: 1rem;
     /* color: #383838; */
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: white;
+  background-color: #4d4d4d;
+  text-align:center;
+
+  /* padding-top: 8px;
+  padding-bottom: 8px; */
+
+  padding: 8px 0 8px;
+}
+
+/* SECTION 1 */
+.practiceContainer {
+  background-color: white;
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
+}
+
+.leftSide {
+  width: 60%;
+  margin: 32px 24px 32px 24px;
+}
+
+.leftSide img {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 100%;
+  /* margin: 32px 24px 32px 24px; */
+}
+
+.rightSide {
+
 }
 
 
+.box {
+  display: flex;
+  align-items: center;
+
+}
+
+.box img {
+  width: 30%
+  /* margin: 16px; */
+  padding: 16px;
+}
 
 
 /* MEDIA QUERIES */

@@ -320,6 +320,16 @@ nav span:hover {
       /* margin-right: 5px; */
     }
 
+    .box.highlight {
+      /* background-color: #d8d8d8; */
+      background-color: white;
+    }
+
+    .practice.container {
+      padding-bottom: 16px;
+    }
+
+
 }
 
 /* ########################## */
@@ -395,11 +405,31 @@ nav span:hover {
 
 @media only screen and (max-width: 740px) {
 
-  .gallery {
+  .courses.container {
+
+    background-color: #f5f4f5;
+
+
+  }
+
+  .courses .gallery {
     display: none;
   }
   .courseList {
     display: initial;
+  }
+
+  .courseList a {
+    background-color: #d8d8d8;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    color: #4d4d4d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Vollkorn', sans-serif;
   }
 
 }
@@ -453,6 +483,47 @@ nav span:hover {
 .rightSide {
   width: 40%;
   padding-top: 16px;
+}
+
+
+.thesisMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 740px) {
+
+  .thesis.container {
+    paddiing-top:24px;
+  }
+
+  .thesisMobile {
+    display: initial;
+  }
+
+  .thesisMobile video {
+    /* margin-top: 32px; */
+    margin-bottom: 32px;
+    width: 100%;
+    /* margin: 32px 24px 32px 24px; */
+  }
+
+  .thesisMobile h2 {
+    /* background-color: hsl(60, 50%, 90%); */
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+  .thesis .leftSide {
+    display: none;
+  }
+
+  .thesis .rightSide {
+    display: none;
+  }
+
 }
 
 /* .box:first-child {

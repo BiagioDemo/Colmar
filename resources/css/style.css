@@ -1,7 +1,7 @@
 /* UNIVERSAL */
 html, body {
   font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Exo', sans-serif;
   /* background-color: #d8d8d8; */
   background-color: lightblue;
   color: #4d4d4d;
@@ -55,10 +55,15 @@ header {
 
 .colmar{
   color: #4a4a4a;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .academy {
   color: #999999;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav {
@@ -75,6 +80,7 @@ nav span {
 
 nav span:hover {
   color: black;
+  cursor:pointer;
 }
 
 
@@ -108,23 +114,33 @@ nav span:hover {
 }
 
 .CTAContainer {
-  padding-right: 60px;
-  width:40%;
+  padding-right: 50px;
+  /* width:40%; */
 }
 
 .CTAContainer h1 {
-  font-size: 2.15rem;
+  font-size: 3.15rem;
     /* color: #383838; */
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: bolder;
+  /* background-color: orange; */
+  padding-bottom: 1rem;
+}
+
+.CTAContainer h3 {
+  /* background-color: lightgreen; */
   font-weight: bold;
+  padding-bottom: 2rem;
 }
 
 .CTAContainer h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
     /* color: #383838; */
   /* font-weight: bold; */
   color: white;
   background-color: #4d4d4d;
   text-align:center;
+
 
   /* padding-top: 8px;
   padding-bottom: 8px; */
@@ -136,6 +152,7 @@ nav span:hover {
 .practiceContainer {
   background-color: white;
   width: 1024px;
+
   margin: 0 auto;
   display: flex;
   /* align-items: center; */
@@ -147,14 +164,43 @@ nav span:hover {
 }
 
 .leftSide img {
-  margin-top: 32px;
+  /* margin-top: 32px; */
   margin-bottom: 32px;
   width: 100%;
   /* margin: 32px 24px 32px 24px; */
 }
 
-.rightSide {
+.leftSide h2 {
+  /* background-color: hsl(60, 50%, 90%); */
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-bottom: 32px;
+}
 
+.leftSide p {
+  /* background-color: lightgray; */
+  /* background-color: hsl(10, 50%, 90%); */
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-size: .8rem;
+  padding-bottom: 32px;
+}
+
+.leftSide span {
+  /* background-color: lightgray; */
+  /* background-color: hsl(90, 50%, 90%); */
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-size: .667rem;
+  padding-bottom: 32px;
+}
+
+.rightSide {
+  width: 40%;
+  padding-top: 16px;
+}
+
+.box:last-child {
+  background-color: #d8d8d8;
 }
 
 
@@ -165,9 +211,74 @@ nav span:hover {
 }
 
 .box img {
-  width: 30%
+  width: 35%;
   /* margin: 16px; */
   padding: 16px;
+}
+
+.box h6 {
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  padding-bottom: 8px;
+}
+
+.box p {
+  /* background-color: lightgray; */
+  /* background-color: hsl(10, 50%, 90%); */
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-size: .8rem;
+  padding-bottom:8px;
+}
+
+.box a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+/* COURSES */
+
+.coursesCointainer {
+  /* background-color: hsl(60, 50%, 90%); */
+  width: 1024px;
+  margin: 0 auto;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.coursesCointainer h2 {
+  /* background-color: hsl(60, 50%, 90%); */
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.coursesCointainer .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.course {
+  /* background-color: hsl(200, 50%, 90%); */
+  background-color: white;
+  width: 30%;
+  margin-bottom: 32px;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course-content {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
 }
 
 

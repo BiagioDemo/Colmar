@@ -15,7 +15,16 @@ html, body {
   display: flex;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /* NAV */
+
+
+
 header {
   width: 100%;
   height: 64px;
@@ -78,6 +87,28 @@ nav span:hover {
   cursor:pointer;
 }
 
+.mobileNav{
+  display: none;
+}
+
+@media only screen and (max-width: 740px) {
+  .mobileNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    /* background-color: red; */
+  }
+
+  .logoGroup {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
 
 /* MAIN CONTAINER */
 
@@ -134,6 +165,32 @@ nav span:hover {
 
   padding: 8px 0 8px;
 }
+
+
+@media only screen and (max-width: 740px) {
+
+  .hero.container {
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 100%;
+    /* margin: 32px 24px 32px 24px; */
+  }
+
+  .CTAContainer h4 {
+
+    width: 100%;
+
+  }
+
+  .CTAContainer {
+    padding-right: 0px;
+    padding-bottom: 24px;
+  }
+
+}
+
 
 /* SECTION 1: Practice */
 .practice.container {
@@ -225,13 +282,13 @@ nav span:hover {
 
 /* COURSES */
 
-.courses.cointainer {
+.courses.container {
   /* background-color: hsl(60, 50%, 90%); */
   background-color: #d8d8d8;
-  width: 1024px;
-  margin: 0 auto;
-  /* display: flex; */
-  /* align-items: center; */
+  /* width: 1024px;
+  margin: 0 auto; */
+  display: block;
+
 }
 
 .courses h2 {
@@ -293,10 +350,7 @@ nav span:hover {
 
 .thesis.container {
   background-color: white;
-  width: 1024px;
 
-  margin: 0 auto;
-  display: flex;
   /* align-items: center; */
 }
 

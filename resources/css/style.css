@@ -1,4 +1,6 @@
+/* ########################## */
 /* UNIVERSAL */
+/* ########################## */
 html, body {
   font-size: 16px;
   /* font-family: 'Exo', sans-serif; */
@@ -21,8 +23,9 @@ html, body {
   }
 }
 
+/* ########################## */
 /* NAV */
-
+/* ########################## */
 
 
 header {
@@ -109,18 +112,18 @@ nav span:hover {
   }
 }
 
-
+/* ########################## */
 /* MAIN CONTAINER */
-
+/* ########################## */
 .mainContainer {
   position: relative;
   top: 64px;
   /* background-color: red; */
 }
 
-
+/* ########################## */
 /* HERO */
-
+/* ########################## */
 .hero.container {
 
   background-color: #d8d8d8;
@@ -191,8 +194,10 @@ nav span:hover {
 
 }
 
-
+/* ########################## */
 /* SECTION 1: Practice */
+/* ########################## */
+
 .practice.container {
   background-color: white;
 }
@@ -254,6 +259,7 @@ nav span:hover {
 
 }
 
+
 .box img {
   width: 35%;
   /* margin: 16px; */
@@ -280,8 +286,45 @@ nav span:hover {
   text-decoration: none;
 }
 
-/* COURSES */
+.box img.mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 740px) {
+
+  .leftSide {
+    display: none;
+  }
+  .box {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+
+  .box img.mobile {
+    display: initial;
+    width: 100%
+  }
+
+  .box img.desktop {
+    display: none;
+  }
+
+  .rightSide {
+
+
+      width: 100%;
+      padding-top: 16px;
+      margin-left: 16px;
+      margin-right: 16px;
+      /* margin-right: 5px; */
+    }
+
+}
+
+/* ########################## */
+/* COURSES */
+/* ########################## */
 .courses.container {
   /* background-color: hsl(60, 50%, 90%); */
   background-color: #d8d8d8;
@@ -345,8 +388,25 @@ nav span:hover {
 }
 
 
-/* THESIS */
+.courseList {
+  display: none;
+}
 
+
+@media only screen and (max-width: 740px) {
+
+  .gallery {
+    display: none;
+  }
+  .courseList {
+    display: initial;
+  }
+
+}
+
+/* ########################## */
+/* THESIS */
+/* ########################## */
 
 .thesis.container {
   background-color: white;
@@ -399,8 +459,9 @@ nav span:hover {
   background-color: #d8d8d8;
 } */
 
+/* ########################## */
 /* FOOTER */
-
+/* ########################## */
 footer {
   margin-top: 36px;
   width 100%
@@ -419,6 +480,7 @@ footer {
 .copyright {
   flex-grow: 1;
   color: gray;
+  margin-left: 16px;
 }
 
 .terms span  {
@@ -431,20 +493,9 @@ footer {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .footerContainer {
+    width: 100%;
 
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 480px) {}
-
-@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {}
-
-@media only screen and (min-resolution: 150dpi) {
-  /* CSS for high resolution screens */
-  /* .logo{
-  background-image: url("../img/spaceship@2x.png");
-  } */
+  }
 }
-
-@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}

@@ -4,9 +4,10 @@
 html, body {
   font-size: 16px;
   /* font-family: 'Exo', sans-serif; */
-  font-family: 'Ovo', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
   background-color: #d8d8d8;
+  background-color: #f2f2f2;
   /* background-color: lightblue; */
   color: #4d4d4d;
 }
@@ -61,14 +62,17 @@ header {
 }
 
 .colmar{
-  color: #4a4a4a;
+  /* color: #4a4a4a; */
+  /* color: #78ca9a; */
+  color: #5fa17b;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
 }
 
 .academy {
-  color: #999999;
+  color: #1a1a1a;
+  /* color: #78ca9a; */
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -126,7 +130,7 @@ nav span:hover {
 /* ########################## */
 .hero.container {
 
-  background-color: #d8d8d8;
+  background-color: #e5e5e5;
 
   align-items: center;
 
@@ -143,12 +147,14 @@ nav span:hover {
 }
 
 .CTAContainer h1 {
-  font-size: 2.15rem;
-  font-family: 'Vollkorn', sans-serif;
+  font-size: 2.0rem;
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-family: 'Ovo', sans-serif;
   /* font-family: 'Muli', sans-serif; */
   font-weight: bolder;
   /* background-color: orange; */
   padding-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .CTAContainer h3 {
@@ -159,10 +165,11 @@ nav span:hover {
 
 .CTAContainer h4 {
   font-size: 1.0rem;
-  width: 50%;
+  width: 60%;
   font-weight: bold;
   color: white;
-  background-color: #4d4d4d;
+  /* background-color: #4d4d4d; */
+  background-color: #78c99a;
   text-align:center;
   text-transform: uppercase;
 
@@ -195,7 +202,7 @@ nav span:hover {
 }
 
 /* ########################## */
-/* SECTION 1: Practice */
+/* PRACTICING */
 /* ########################## */
 
 .practice.container {
@@ -216,10 +223,12 @@ nav span:hover {
 
 .leftSide h2 {
   /* background-color: hsl(60, 50%, 90%); */
-  font-family: 'Vollkorn', sans-serif;
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-family: 'Ovo', sans-serif;
   font-weight: bolder;
   font-size: 1.5rem;
   padding-bottom: 32px;
+  text-transform: uppercase;
 }
 
 .leftSide p {
@@ -256,6 +265,7 @@ nav span:hover {
 .box {
   display: flex;
   align-items: center;
+  padding-right: 5px;
 
 }
 
@@ -267,10 +277,12 @@ nav span:hover {
 }
 
 .box h6 {
-  font-family: 'Vollkorn', sans-serif;
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-family: 'Ovo', sans-serif;
   font-weight: bolder;
   font-size: 1.25rem;
   padding-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .box p {
@@ -338,7 +350,7 @@ nav span:hover {
 /* ########################## */
 .courses.container {
   /* background-color: hsl(60, 50%, 90%); */
-  background-color: #d8d8d8;
+  background-color: #e5e5e5;
   /* width: 1024px;
   margin: 0 auto; */
   display: block;
@@ -347,12 +359,14 @@ nav span:hover {
 
 .courses h2 {
   /* background-color: hsl(60, 50%, 90%); */
-  font-family: 'Vollkorn', sans-serif;
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-family: 'Ovo', sans-serif;
   font-weight: bolder;
   font-size: 1.5rem;
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .courses .gallery {
@@ -381,11 +395,13 @@ nav span:hover {
 }
 
 .course-content h6 {
-  font-family: 'Vollkorn', sans-serif;
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-family: 'Ovo', sans-serif;
   font-weight: bolder;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   /* padding-top: 16px; */
   padding-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .course-content span {
@@ -423,14 +439,15 @@ nav span:hover {
   .courseList a {
     background-color: #d8d8d8;
     display: block;
-    text-align: center;
+    /* text-align: center; */
     padding: 16px;
     margin: 8px;
     color: #4d4d4d;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Vollkorn', sans-serif;
+    /* font-family: 'Vollkorn', sans-serif; */
+    font-family: 'Ovo', sans-serif;
   }
 
 }
@@ -459,7 +476,8 @@ nav span:hover {
 
 .leftSide h2 {
   /* background-color: hsl(60, 50%, 90%); */
-  font-family: 'Vollkorn', sans-serif;
+  /* font-family: 'Vollkorn', sans-serif; */
+  font-family: 'Ovo', sans-serif;
   font-weight: bolder;
   font-size: 1.5rem;
   padding-bottom: 32px;
@@ -510,7 +528,8 @@ nav span:hover {
 
   .thesisMobile h2 {
     /* background-color: hsl(60, 50%, 90%); */
-    font-family: 'Vollkorn', sans-serif;
+    /* font-family: 'Vollkorn', sans-serif; */
+    font-family: 'Ovo', sans-serif;
     font-weight: bolder;
     font-size: 1.5rem;
     padding-top: 32px;
